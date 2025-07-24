@@ -23,11 +23,17 @@ body {
 .color2 {
   color: #8987a1;
 }
+.color3 {
+  color: #e95a08;
+}
+.color4 {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* Navbar Section Styles */
 .nav-container {
   max-width: 1140px;
-  margin: 30px 150px 120px;
+  margin: 30px auto 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,3 +49,17 @@ body {
 }
 
 /* Banner Section Styles */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.banner-tittle {
+  font-size: 4.06rem;
+  font-weight: 700;
+}
+.banner-desc {
+  margin-top: 13px;
+  font-size: 1.3rem;
+}
