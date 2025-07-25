@@ -29,6 +29,9 @@ body {
 .color4 {
   color: rgba(0, 0, 0, 0.5);
 }
+.color5 {
+  color: #ffffff;
+}
 
 /* Navbar Section Styles */
 .nav-container {
@@ -103,11 +106,13 @@ body {
   margin-bottom: 30px;
 }
 .card-details h2 {
+  color: #111111;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 .card-details h3 {
+  color: #111111;
   font-size: 22px;
   font-weight: 700;
 }
@@ -127,4 +132,160 @@ body {
   gap: 20px;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Lover Section Styles */
+.lover-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.lover-details h3 {
+  font-size: 3.1rem;
+}
+.lover-details ul li {
+  font-size: 22px;
+}
+.lover-details * {
+  margin: 0;
+}
+.lover-details {
+  max-width: 540px;
+  margin: 38px 0px 38px 60px;
+  gap: 20px;
+}
+
+/* Lover Badge Styles */
+.lover-image {
+  position: relative;
+  flex-shrink: 0;
+}
+.main-image {
+  width: 540px;
+  display: block;
+}
+.badge {
+  position: absolute;
+  top: -128px;
+  right: -92px;
+  z-index: 10;
+  /* margin-top: 83px; */
+  max-width: 286px;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Latest Section Styles */
+.latest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 133px auto 120px;
+}
+.latest-container h3 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+.latest-container p {
+  font-size: 22px;
+}
+
+/* Image Section Styles */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 210px);
+  gap: 20px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.card-inside {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+.card-1 .card-inside h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-1 .card-inside a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-2 .card-inside h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-2 .card-inside a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-3 .card-inside h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.card-3 .card-inside a {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 22px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+/*  */
+.card-1 {
+  background-image: url(../assets/deal-bloom.png);
+  grid: 1;
+  grid-row: 1;
+}
+.card-2 {
+  background-image: url(../assets/deal-ana.png);
+  grid: 1;
+  grid-row: 2;
+}
+.card-3 {
+  background-image: url(../assets/deal-zabo.png);
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* Join Section Styles */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url(../assets/news-letter-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 120px;
+  width: 100%;
+  max-width: 1440px;
+}
+.join-tittle {
+  font-size: 50px;
+  font-weight: 700;
+}
+.join-overlay {
+  padding: 196px 305px;
 }
